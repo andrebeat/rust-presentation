@@ -1,7 +1,8 @@
 const colors = {
-  primary: "#f9c300",
-  secondary: "black",
-  tertiary: "white"
+  black: '#01111B',
+  primary: '#F5EEE9',
+  secondary: '#01111B',
+  tertiary: '#FF5548'
 };
 
 const fonts = {
@@ -145,7 +146,7 @@ module.exports = {
       }
     },
     code: {
-      color: "black",
+      color: colors.black,
       fontSize: "2.66em",
       fontFamily: fonts.tertiary,
       margin: "0.25em auto",
@@ -172,7 +173,7 @@ module.exports = {
         margin: 0
       },
       h3: {
-        color: "black",
+        color: colors.black,
         fontSize: "4.9em",
         fontFamily: fonts.secondary,
         lineHeight: 1,
@@ -180,7 +181,7 @@ module.exports = {
         margin: "0.5em auto"
       },
       h4: {
-        color: "black",
+        color: colors.black,
         fontSize: "3.82em",
         fontFamily: fonts.primary,
         lineHeight: 1,
@@ -188,7 +189,7 @@ module.exports = {
         margin: "0.5em auto"
       },
       h5: {
-        color: "black",
+        color: colors.black,
         fontSize: "3.19em",
         fontFamily: fonts.primary,
         lineHeight: 1,
@@ -196,7 +197,7 @@ module.exports = {
         margin: "0.5em auto"
       },
       h6: {
-        color: "black",
+        color: colors.black,
         fontSize: "2.66em",
         fontFamily: fonts.primary,
         lineHeight: 1,
@@ -223,7 +224,7 @@ module.exports = {
       strikethrough: {}
     },
     text: {
-      color: "black",
+      color: colors.black,
       fontSize: "2.66em",
       fontFamily: fonts.primary,
       margin: "0.25em auto"
