@@ -131,6 +131,13 @@ export default class extends React.Component {
               </Slide>
 
               <Slide>
+                <Heading>Heap Allocation</Heading>
+                <CodePane lang="rust"
+                          source={require("raw!./code/basics/heap.rs")}
+                          margin="20px auto"/>
+              </Slide>
+
+              <Slide>
                 <Heading>Method Syntax</Heading>
                 <CodePane lang="rust"
                           source={require("raw!./code/basics/methods.rs")}
@@ -182,12 +189,8 @@ export default class extends React.Component {
 
               <Slide>
                 <Heading>Lifetimes</Heading>
-              </Slide>
-
-              <Slide>
-                <Heading>Heap Allocation</Heading>
                 <CodePane lang="rust"
-                          source={require("raw!./code/basics/heap.rs")}
+                          source={require("raw!./code/basics/lifetimes.rs")}
                           margin="20px auto"/>
               </Slide>
 
