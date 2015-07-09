@@ -8,7 +8,7 @@ import {
 export default class extends React.Component {
     render() {
         return (
-            <Deck transition={['slide', 'fade']} transitionDuration={600}>
+            <Deck transition={['slide', 'fade']} transitionDuration={600} progress="number">
               <Slide>
                 <Heading>Rust</Heading>
                 <Heading size="3">Safe Systems Programming</Heading>
