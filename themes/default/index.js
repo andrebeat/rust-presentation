@@ -133,7 +133,7 @@ module.exports = {
     codePane: {
       pre: {
         margin: "auto",
-        fontSize: "1em",
+        fontSize: "1.6em",
         fontWeight: "normal",
         fontFamily: fonts.tertiary,
         minWidth: "100%",
@@ -142,7 +142,8 @@ module.exports = {
       code: {
         textAlign: "left",
         padding: 20,
-        fontWeight: "normal"
+        fontWeight: "normal",
+        background: colors.black
       }
     },
     code: {

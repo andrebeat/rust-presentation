@@ -14,7 +14,7 @@ import config from "./presentation/config";
 
 require("normalize.css");
 require("./themes/default/index.css");
-require("highlight.js/styles/monokai_sublime.css");
+require("highlight.js/styles/sunburst.css");
 
 const flux = new Flux();
 Alt.debug("flux", flux);
