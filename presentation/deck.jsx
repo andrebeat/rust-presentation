@@ -14,21 +14,6 @@ export default class extends React.Component {
                 <Heading size="3">Safe Systems Programming</Heading>
                 <Text>André Silva @ ShiftForward</Text>
               </Slide>
-              <Slide>
-                <Heading textAlign="left">Index</Heading>
-                <List>
-                  <Appear><ListItem>Problem and Solution</ListItem></Appear>
-                  {/*why it was created, comparison to C++ + ML*/}
-                  <Appear><ListItem>Hello World!</ListItem></Appear>
-                  {/*hello world program*/}
-                  <Appear><ListItem>General Overview</ListItem></Appear>
-                  {/*general language features overview*/}
-                  <Appear><ListItem>Linked-list example</ListItem></Appear>
-                  {/*simple, showcases stack allocation vs heap allocation. show traits example?*/}
-                  <Appear><ListItem>Borrowing & Ownership</ListItem></Appear>
-                  {/*various sharing models, comparison to C++ bugs*/}
-                </List>
-              </Slide>
 
               <Slide>
                 <Heading>Goal</Heading>
@@ -118,44 +103,44 @@ export default class extends React.Component {
               </Slide>
 
               <Slide>
-                <Heading>Basics</Heading>
+                <Heading>Bindings</Heading>
                 <CodePane lang="rust"
-                          source={require("raw!./code/basics/1.rs")}
+                          source={require("raw!./code/basics/bindings.rs")}
                           margin="20px auto"/>
               </Slide>
 
               <Slide>
                 <Heading>Looping</Heading>
                 <CodePane lang="rust"
-                          source={require("raw!./code/basics/2.rs")}
+                          source={require("raw!./code/basics/looping.rs")}
                           margin="20px auto"/>
               </Slide>
 
               <Slide>
                 <Heading>Data Types</Heading>
                 <CodePane lang="rust"
-                          source={require("raw!./code/basics/3.rs")}
+                          source={require("raw!./code/basics/datatypes.rs")}
                           margin="20px auto"/>
               </Slide>
 
               <Slide>
                 <Heading>Pattern Matching</Heading>
                 <CodePane lang="rust"
-                          source={require("raw!./code/basics/4.rs")}
+                          source={require("raw!./code/basics/pattern_matching.rs")}
                           margin="20px auto"/>
               </Slide>
 
               <Slide>
                 <Heading>Method Syntax</Heading>
                 <CodePane lang="rust"
-                          source={require("raw!./code/basics/5.rs")}
+                          source={require("raw!./code/basics/methods.rs")}
                           margin="20px auto"/>
               </Slide>
 
               <Slide>
                 <Heading>Generics</Heading>
                 <CodePane lang="rust"
-                          source={require("raw!./code/basics/6.rs")}
+                          source={require("raw!./code/basics/generics.rs")}
                           margin="20px auto"/>
               </Slide>
 
@@ -163,20 +148,47 @@ export default class extends React.Component {
                 <Heading>Traits</Heading>
                 <Text>...read typeclasses.</Text>
                 <CodePane lang="rust"
-                          source={require("raw!./code/basics/7.rs")}
+                          source={require("raw!./code/basics/traits.rs")}
                           margin="20px auto"/>
               </Slide>
 
               <Slide>
                 <Heading>Ownership</Heading>
+                <CodePane lang="rust"
+                          source={require("raw!./code/basics/ownership1.rs")}
+                          margin="20px auto"/>
               </Slide>
 
               <Slide>
                 <Heading>Borrowing</Heading>
+                <CodePane lang="rust"
+                          source={require("raw!./code/basics/borrowing1.rs")}
+                          margin="20px auto"/>
+              </Slide>
+
+              <Slide>
+                <Heading>Borrowing</Heading>
+                <CodePane lang="rust"
+                          source={require("raw!./code/basics/borrowing2.rs")}
+                          margin="20px auto"/>
+              </Slide>
+
+              <Slide>
+                <Heading>Borrowing</Heading>
+                <CodePane lang="rust"
+                          source={require("raw!./code/basics/borrowing3.rs")}
+                          margin="20px auto"/>
               </Slide>
 
               <Slide>
                 <Heading>Lifetimes</Heading>
+              </Slide>
+
+              <Slide>
+                <Heading>Heap Allocation</Heading>
+                <CodePane lang="rust"
+                          source={require("raw!./code/basics/heap.rs")}
+                          margin="20px auto"/>
               </Slide>
 
               <Slide>
@@ -205,7 +217,7 @@ export default class extends React.Component {
 
               <Slide>
                 <Heading>Linked List</Heading>
-                <Text>...what about iterators?</Text>
+                <Text>...let's add some methods.</Text>
                 <CodePane lang="rust"
                           source={require("raw!./code/list/4.rs")}
                           margin="20px auto"/>
@@ -236,6 +248,14 @@ export default class extends React.Component {
               </Slide>
 
               <Slide>
+                <Heading>Linked List</Heading>
+                <Text>...what about iterators?</Text>
+                <CodePane lang="rust"
+                          source={require("raw!./code/list/8.rs")}
+                          margin="20px auto"/>
+              </Slide>
+
+              <Slide>
                 <Heading>For another talk</Heading>
                 <List padding="0% 15%">
                   <ListItem>Concurrency</ListItem>
@@ -256,7 +276,9 @@ export default class extends React.Component {
               <Slide>
                 <Heading>References</Heading>
                 <List padding="0% 15%">
-                  <ListItem></ListItem>
+                  <ListItem><Link href="https://doc.rust-lang.org/book/">The Rust Programming Language</Link></ListItem>
+                  <ListItem><Link href="http://rustbyexample.com/">Rust by Example</Link></ListItem>
+                  <ListItem><Link href="https://www.youtube.com/watch?v=O5vzLKg7y-k">Stanford Seminar - Aaron Turon of Mozilla</Link></ListItem>
                 </List>
               </Slide>
             </Deck>

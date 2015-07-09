@@ -5,4 +5,4 @@ int& y = ...;
     y = x;
 }
 
-std::cout << y << std::endl;
+std::cout << y << std::endl; // use after free
