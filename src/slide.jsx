@@ -91,7 +91,7 @@ const Slide = React.createClass({
       content: {
         flex: 1,
         position: "absolute",
-        top: "50%",
+        top: "40%",
         left: "50%",
         maxHeight: config.height,
         width: config.width,
